@@ -1,0 +1,68 @@
+.form
+  &-default
+    input, textarea, select, option
+      transition: $transition
+      background: none
+      border: none
+      border-bottom: 1px solid #7cddf7
+      color: #fff
+      padding: 0
+
+      &::placeholder
+        color: #d4f6ff
+        font: 400 13px/30px Montserrat, sans-serif
+        text-transform: uppercase
+        letter-spacing: 0.97px
+      &:focus
+        border-bottom: 1px solid $accent-color
+
+    textarea
+      resize: none
+      width: 100%
+      margin-top: 15px
+
+  &-about-us
+    color: #fff
+    background: $accent-color-second
+    padding: 45px 35px 0
+    input
+      width: 100%
+
+    h4
+      color: #fff
+      margin-bottom: 15px
+
+  &-contact-us
+    padding-bottom: 90px
+    select
+      padding: 6px 0
+    input, textarea, select, option
+      text-transform: uppercase
+      font: 400 13px/30px Montserrat, serif
+      width: 100%
+      color: #343a3b
+      border-bottom: 1px solid #cddbde
+      margin-bottom: 30px
+      &::placeholder
+        color: #343a3b
+
+    option
+      background: $gray
+    select option:hover
+      box-shadow: 0 0 10px 100px red inset
+
+  &-new-jobs
+    @extend .form-contact-us
+    input[type="file"]
+      opacity: 0
+      position: absolute
+      top: 0
+      left: 0
+      z-index: 5
+      cursor: pointer
+
+  &-leave-message
+    @extend .form-contact-us
+    input
+      margin-bottom: 0
+

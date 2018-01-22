@@ -1,0 +1,95 @@
+//WELCOME-CAROUSEL
+
+.link-industry
+  background: $accent-color-second
+  display: block
+  padding: 80px 0 90px
+  font: 700 20px/30px Montserrat,serif
+  i
+    margin-bottom: 20px
+  &:hover
+    background: $accent-color
+
+.welcome-carousel
+  padding: 50px 0 0
+.slick-dots
+  bottom: -100px
+  li
+    margin: 0 2px
+    button
+      transition: $transition
+      width: 16px
+      height: 16px
+      border: 2px solid #fff
+      border-radius: 50%
+      &:hover
+        border: 2px solid $accent-color-third
+      &:before
+        transition: $transition
+        color: $accent-color-third
+        line-height: 17px
+        width: 17px
+        font-size: 24px
+        opacity: 0
+  .slick-active
+    button
+      border: 2px solid $accent-color-third
+
+.slick-dots li.slick-active button:before
+  color: $accent-color-third
+
+
+//ABOUT-CAROUSEL
+
+.about-carousel
+  border-top: 1px solid $gray
+  padding: 50px 0 85px
+
+  .slick-slide
+    img
+      transition: $transition
+      opacity: 0.25
+      margin: 0 auto
+      &:hover
+        opacity: 1
+
+  .slick-next, .slick-prev
+    line-height: 40px
+    height: 45px
+
+  .slick-track
+    width: 100%
+
+  .slick-prev
+    padding-right: 25px
+
+  .slick-next
+    padding-left: 5px
+
+  .slick-prev:hover:before, .slick-prev:focus:before
+    content: url("../../images/carousel-arrow-left-active.png")
+
+  .slick-next:hover:before, .slick-next:focus:before
+    content: url("../../images/carousel-arrow-right-active.png")
+
+  .slick-prev:before
+    content: url("../../images/carousel-arrow-left.png")
+
+  .slick-next:before
+    content: url("../../images/carousel-arrow-right.png")
+
+//PROJECT-CAROUSEL
+
+.project-carousel
+  .slick-dots
+    width: 100px
+    bottom: 160px
+    right: 20px
+  li
+    button:before
+      width: 15px
+
+.project-slider-item
+  img
+    max-height: 287px
+
