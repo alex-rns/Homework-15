@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 const Header = () => {
   return (
     <header className="main-header">
@@ -20,14 +22,14 @@ const Header = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto text-uppercase">
             <li className="nav-item active">
-              <a className="nav-link" href="index.html">Home <span
-                className="sr-only">(current)</span></a>
+              <Link to="/" className="nav-link">Home <span
+                className="sr-only">(current)</span></Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="about-us.html">about us</a>
+              <Link to="/about" className="nav-link">about us</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="industry.html">industry</a>
+              <Link to="/industry" className="nav-link">industry</Link>
             </li>
             <li className="nav-item">
               <a className="nav-link">services</a>
@@ -40,16 +42,16 @@ const Header = () => {
                 pages
               </a>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a className="dropdown-item" href="blog.html">Blog</a>
-                <a className="dropdown-item" href="blog-post.html">Blog post</a>
-                <a className="dropdown-item" href="testimonials.html">Testimonials</a>
-                <a className="dropdown-item" href="pricing.html">Pricing</a>
-                <a className="dropdown-item" href="careers.html">Careers</a>
-                <a className="dropdown-item" href="404.html">404</a>
+                <Link to="/blog" className="dropdown-item">Blog</Link>
+                <Link to="/blog-post" className="dropdown-item">Blog post</Link>
+                <Link to="/testimonials" className="dropdown-item">Testimonials</Link>
+                <Link to="/pricing" className="dropdown-item">Pricing</Link>
+                <Link to="/careers" className="dropdown-item">Careers</Link>
+                <Link to="/404" className="dropdown-item">404</Link>
               </div>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="contact-us.html">Contact us</a>
+              <Link to="/contact" className="nav-link">Contact us</Link>
             </li>
           </ul>
         </div>

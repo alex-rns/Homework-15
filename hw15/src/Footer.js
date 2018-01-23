@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 const Footer = () => {
   return (
@@ -7,21 +9,21 @@ const Footer = () => {
 
         <div className="main-footer-top row align-items-top ">
           <div className="main-footer-logo col-md-2 align-self-center">
-            <a href="index.html">
+            <Link to="/">
               <img className="img-fluid" src="images/logo.png" alt="logo"/>
-            </a>
+            </Link>
           </div>
           <div className="offset-lg-2 col-lg-2 offset-0 col-md-3 col-6">
             <h5>navigation</h5>
             <ul>
               <li>
-                <a href="index.html">Home</a>
+                <Link to="/" href="index.html">Home</Link>
               </li>
               <li>
-                <a href="about-us.html">about us</a>
+                <Link to="/about">about us</Link>
               </li>
               <li>
-                <a href="industry.html">industry</a>
+                <Link to="/industry">industry</Link>
               </li>
               <li>
                 <a href="">services</a>
@@ -33,16 +35,16 @@ const Footer = () => {
                   pages
                 </a>
                 <div className="dropdown-menu">
-                  <a className="dropdown-item" href="blog.html">Blog</a>
-                  <a className="dropdown-item" href="blog-post.html">Blog post</a>
-                  <a className="dropdown-item" href="testimonials.html">Testimonials</a>
-                  <a className="dropdown-item" href="pricing.html">Pricing</a>
-                  <a className="dropdown-item" href="careers.html">Careers</a>
-                  <a className="dropdown-item" href="404.html">404</a>
+                  <Link to="/blog" className="dropdown-item">Blog</Link>
+                  <Link to="/blog-post" className="dropdown-item">Blog post</Link>
+                  <Link to="/testimonials" className="dropdown-item">Testimonials</Link>
+                  <Link to="/pricing" className="dropdown-item">Pricing</Link>
+                  <Link to="/careers" className="dropdown-item">Careers</Link>
+                  <Link to="/404" className="dropdown-item">404</Link>
                 </div>
               </li>
               <li>
-                <a href="contact-us.html">Contact us</a>
+                <Link to="/contact">Contact us</Link>
               </li>
             </ul>
           </div>
