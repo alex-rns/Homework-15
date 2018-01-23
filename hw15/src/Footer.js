@@ -17,7 +17,7 @@ const Footer = () => {
             <h5>navigation</h5>
             <ul>
               <li>
-                <Link to="/" href="index.html">Home</Link>
+                <Link to="/">Home</Link>
               </li>
               <li>
                 <Link to="/about">about us</Link>

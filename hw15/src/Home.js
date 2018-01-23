@@ -1,15 +1,21 @@
 import React from 'react';
-import MainBanner from './sections/MainBanner'
-import MainAboutUs from './sections/MainAboutUs'
-import OurFeatures from './sections/OurFeatures'
-import ProjectsSection from './sections/ProjectsSection'
-import MainServices from './sections/MainServices'
-import MainTestimonials from "./sections/MainTestimonials";
-import MainOurBlog from "./sections/MainOurBlog";
-import QuickContact from "./sections/QuickContact";
+import MainBanner from './HomeComponents/MainBanner'
+import MainAboutUs from './HomeComponents/MainAboutUs'
+import OurFeatures from './HomeComponents/OurFeatures'
+import ProjectsSection from './HomeComponents/ProjectsSection'
+import MainServices from './HomeComponents/MainServices'
+import MainTestimonials from "./HomeComponents/MainTestimonials";
+import MainOurBlog from "./HomeComponents/MainOurBlog";
+import QuickContact from "./HomeComponents/QuickContact";
+
+
+
 
 
 class Home extends React.Component {
+  componentDidMount(){
+    document.title = "Consult Plus"
+  }
   render() {
     return (
       <div className="Home">
