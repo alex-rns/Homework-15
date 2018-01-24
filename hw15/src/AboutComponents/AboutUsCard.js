@@ -38,14 +38,14 @@ class AboutUsCard extends React.Component {
                       <img
                         className="card-img-top"
                         src={item.img}
-                        alt="Card img" />
+                        alt="Card img"
+                      />
                       <div className="card-block">
                         <h4 className="card-title">{item.title}</h4>
                         <p className="card-text">{item.text}</p>
                         <a href="" className="button-main">{item.buttonText}</a>
                       </div>
                     </div>
-
                   </li>
                 )
               })
