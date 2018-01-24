@@ -5,6 +5,8 @@ import  { Route } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
 import Industry from './Industry';
+import Contact from './Contact';
+import Blog from './Blog';
 
 class Main extends React.Component {
   render() {
@@ -13,7 +15,8 @@ class Main extends React.Component {
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/industry" component={Industry} />
-        {/*<Route path="/contact" component={Contact} />*/}
+        <Route path="/contact" component={Contact} />
+        <Route path="/blog" component={Blog} />
         {/*<Route path="/blog-post" component={BlogPost} />*/}
         {/*<Route path="/testimonials" component={Testimonials} />*/}
         {/*<Route path="/pricing" component={Pricing} />*/}

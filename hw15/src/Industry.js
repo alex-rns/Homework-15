@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Banner from './AboutComponents/Banner'
+import Banner from './Banner'
 import Testimonials from './HomeComponents/MainTestimonials'
 import IndustryContent from "./IndustryComponents/IndustryContent";
 
@@ -9,7 +9,7 @@ const pageTitle = "Industry";
 
 class Industry extends React.Component {
   componentDidMount(){
-    document.title = "Consult Plus - About"
+    document.title = "Consult Plus - Industry"
   }
   render() {
     return (

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Banner from './AboutComponents/Banner'
+import Banner from './Banner'
 import AboutUsContent from './AboutComponents/AboutUsContent'
 import AboutUsCard from './AboutComponents/AboutUsCard';
 import Testimonials from './HomeComponents/MainTestimonials'
