@@ -6,14 +6,15 @@ class BlogCard extends React.Component {
     return(
       <article className="col-lg-4 col-sm-6 col-12 blog-item">
         <Link to="/blog-post">
-          <div className="blog-card">
+          <div className={'blog-card ' + this.props.dataCardContent.cardImgClass}>
+            {this.props.dataCardContent.img}
             <div className="blog-card-text">
-              <h5>Blog Heading Here</h5>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.</p>
+              <h5>{this.props.dataCardContent.title}</h5>
+              <p>{this.props.dataCardContent.text}</p>
               <div className="blog-card-bottom">
                 <p className="blog-card-data">
                   <i className="fa fa-clock-o"></i>
-                  5-12-2016</p>
+                  {this.props.dataCardContent.data}</p>
                 <div className="share share-blog-card">
 
                   <div className="share-button-open">

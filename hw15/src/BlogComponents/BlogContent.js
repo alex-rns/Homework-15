@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import BlogCard from './BlogCard'
 
@@ -7,6 +6,10 @@ const cardContent = {
   title: "Blog Heading Here",
   text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.",
   data: "5-12-2016",
+  img: "",
+  cardImgClass: "",
+  video: "",
+  accentBg: "",
   tagName : "Health",
   tagLink : "/industry",
   tagIcon : "fa-quote-left"
@@ -15,6 +18,9 @@ const cardContent = {
 
 
 class BlogContent extends React.Component {
+
+
+
   render() {
     return(
       <section className="blog-section container">

@@ -14,5 +14,13 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "bootstrap": "^4.0.0-beta",
+    "jquery": "^3.3.1",
+    "masonry-layout": "^4.2.1",
+    "masonry-layout-react": "^1.0.1",
+    "popper.js": "^1.12.9",
+    "slick-carousel": "^1.8.1"
   }
 }
