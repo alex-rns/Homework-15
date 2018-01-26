@@ -9,9 +9,6 @@ import MainOurBlog from "./HomeComponents/MainOurBlog";
 import QuickContact from "./HomeComponents/QuickContact";
 
 
-
-
-
 class Home extends React.Component {
   componentDidMount(){
     document.title = "Consult Plus"

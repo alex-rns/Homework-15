@@ -1,6 +1,7 @@
 import React from 'react';
 import $ from 'jquery';
 import 'slick-carousel';
+import {Link } from 'react-router-dom'
 
 class MainBannerCarousel extends React.Component {
 
@@ -85,12 +86,12 @@ class MainBannerCarousel extends React.Component {
               return (
                 <div className="col-sm-3 mw-100"
                      key={index}>
-                  <a
-                    href="industry.html"
+                  <Link
+                    to="/industry"
                     className="d-block link-industry text-white text-center text-uppercase">
                     <i className={item.iconClassName + ' icon-industry'}></i>
                     {item.text}
-                  </a>
+                  </Link>
                 </div>
               )
             })

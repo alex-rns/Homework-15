@@ -6,8 +6,6 @@ import BlogContent from "./BlogComponents/BlogContent";
 const pageTitle = "Blog";
 
 
-
-
 class Blog extends React.Component {
   componentDidMount(){
     document.title = "Consult Plus - Blog"

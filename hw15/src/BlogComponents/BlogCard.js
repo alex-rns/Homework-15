@@ -1,52 +1,83 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 class BlogCard extends React.Component {
   render() {
-    return(
-      <article className="col-lg-4 col-sm-6 col-12 blog-item">
-        <Link to="/blog-post">
-          <div className={'blog-card ' + this.props.dataCardContent.cardImgClass}>
-            {this.props.dataCardContent.img}
-            <div className="blog-card-text">
-              <h5>{this.props.dataCardContent.title}</h5>
-              <p>{this.props.dataCardContent.text}</p>
-              <div className="blog-card-bottom">
-                <p className="blog-card-data">
-                  <i className="fa fa-clock-o"></i>
-                  {this.props.dataCardContent.data}</p>
-                <div className="share share-blog-card">
 
-                  <div className="share-button-open">
-                    <i className="icon-share"></i>
+    let data = this.props.dataCardContent;
+
+    let Card = data.map((item, index) => {
+
+      let imgCardClass;
+      let noCardImg;
+      let accentBgCard;
+      let imgCover;
+      let dataDisplay;
+
+      imgCardClass = (item.img) ? "blog-card-img-top " : noCardImg = "d-none";
+
+      if (item.accentBg) {
+        accentBgCard = " blog-card-accent-bg d-block "
+      }
+
+      if (item.imgCover){
+        imgCover = " blog-card-img-cover";  dataDisplay = "d-none"
+      }
+
+
+      return (
+        <article key={index} className="col-lg-4 col-sm-6 col-12 blog-item">
+          <Link to="/blog-post">
+            <div className={"blog-card " + imgCardClass + accentBgCard + imgCover}>
+              <img className={"img-fluid " + noCardImg} src={item.img} alt="blog card top" />
+              <div className="blog-card-text">
+                <h5 className={dataDisplay}>{item.title}</h5>
+                <p className={dataDisplay}>{item.text}</p>
+                <div className="blog-card-bottom">
+                  <p className="blog-card-data">
+                    <i className="fa fa-clock-o"></i>
+                    {item.date}</p>
+                  <div className="share share-blog-card">
+
+                    <div className="share-button-open">
+                      <i className="icon-share"></i>
+                    </div>
+
+                    <ul className="share-social row">
+                      <li>
+                        <a href="https://www.facebook.com/">
+                          <i className="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://twitter.com/">
+                          <i className="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://plus.google.com/">
+                          <i className="fa fa-google-plus" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
-
-                  <ul className="share-social row">
-                    <li>
-                      <a href="https://www.facebook.com/">
-                        <i className="fa fa-facebook" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://twitter.com/">
-                        <i className="fa fa-twitter" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://plus.google.com/">
-                        <i className="fa fa-google-plus" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                  </ul>
                 </div>
               </div>
+
+              <a className="button-tag" href={item.tag.tagLink}>{item.tag.tagName}
+                <i className={"fa " + item.tag.tagIcon}></i>
+              </a>
             </div>
-            <Link className="button-tag" to={this.props.dataCardContent.tagLink}>{this.props.dataCardContent.tagName}
-              <i className={"fa " + this.props.dataCardContent.tagIcon}></i>
-            </Link>
-          </div>
-        </Link>
-      </article>
+          </Link>
+        </article>
+      )
+    });
+
+    return (
+      <div>
+        {Card}
+      </div>
+
     )
   }
 }
