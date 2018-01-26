@@ -1,4 +1,6 @@
 $(function() {
+
+
   $('.testimonials-carousel').slick({
     swipe: false,
     slidesToShow: 1,

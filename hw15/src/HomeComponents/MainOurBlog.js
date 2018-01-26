@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link} from 'react-router-dom'
 
 const MainOurBlog = () => {
 
@@ -28,7 +29,7 @@ const MainOurBlog = () => {
                 <div
                   key={index}
                   className="col-lg-6 our-blog-card">
-                  <a href="blog-post.html">
+                  <Link to="/blog-post">
                     <img
                       className="our-blog-slide-img"
                       src={item.img}
@@ -40,7 +41,7 @@ const MainOurBlog = () => {
                       <h5>{item.title}</h5>
                       <p>{item.text}</p>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               )
             })
@@ -49,7 +50,7 @@ const MainOurBlog = () => {
         </div>
       </div>
       <div className="text-center">
-        <a className="button-main button-main-margin" href="blog.html">Full blog</a>
+        <Link className="button-main button-main-margin" to="/blog">Full blog</Link>
       </div>
     </section>
   )

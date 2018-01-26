@@ -1,6 +1,7 @@
 import React from 'react';
 import $ from 'jquery';
 import 'slick-carousel';
+import { Link} from 'react-router-dom'
 
 class ProjectsSection extends React.Component {
   componentDidMount(){
@@ -20,14 +21,14 @@ class ProjectsSection extends React.Component {
           <div className="row">
 
             <div className="col-lg-4 card border-0">
-              <a href="industry.html" className="button-main button-card">Banking</a>
+              <Link to="/industry" className="button-main button-card">Banking</Link>
               <img className="card-img-top card-project" src="images/project-card.png"
                    alt="Card"/>
 
               <div className="card-block card-block-accent">
-                <a href="industry.html">
+                <Link to="/industry">
                   <h5>Project Heading</h5>
-                </a>
+                </Link>
                 <p className="card-text">Popularised in the 1960s with the release
                   Letraset sheets containing Lorem.</p>
               </div>
@@ -37,14 +38,14 @@ class ProjectsSection extends React.Component {
                  className="project-carousel col-lg-8 card-slider card border-0">
 
               <div className="project-slider-item">
-                <a href="industry.html" className="button-main button-card">Real Estate</a>
+                <Link to="/industry" className="button-main button-card">Real Estate</Link>
                 <img className="card-img-top" src="images/project-slider-img.png"
                      alt="Slider"/>
 
                 <div className="card-block bg-white">
-                  <a href="industry.html">
+                  <Link to="/industry">
                     <h5>Project Heading</h5>
-                  </a>
+                  </Link>
                   <p className="card-text">Popularised in the 1960s with the release of
                     Letraset sheets containing
                     Lorem Ipsum
@@ -54,14 +55,14 @@ class ProjectsSection extends React.Component {
               </div>
 
               <div className="project-slider-item">
-                <a href="industry.html" className="button-main button-card">Real Estate</a>
+                <Link to="/industry" className="button-main button-card">Real Estate</Link>
                 <img className="card-img-top" src="images/project-slider-img.png"
                      alt="Slider"/>
 
                 <div className="card-block bg-white">
-                  <a href="industry.html">
+                  <Link to="/industry">
                     <h5>Project Heading</h5>
-                  </a>
+                  </Link>
                   <p className="card-text">Popularised in the 1960s with the release of
                     Letraset sheets containing
                     Lorem Ipsum
@@ -71,13 +72,13 @@ class ProjectsSection extends React.Component {
               </div>
 
               <div className="project-slider-item">
-                <a href="industry.html" className="button-main button-card">Real Estate</a>
+                <Link to="/industry" className="button-main button-card">Real Estate</Link>
                 <img className="card-img-top" src="images/banner.png" alt="Slider"/>
 
                 <div className="card-block bg-white">
-                  <a href="industry.html">
+                  <Link to="/industry">
                     <h5>Project Heading</h5>
-                  </a>
+                  </Link>
                   <p className="card-text">Popularised in the 1960s with the release of
                     Letraset sheets containing
                     Lorem Ipsum
@@ -89,7 +90,7 @@ class ProjectsSection extends React.Component {
           </div>
         </div>
         <div className="text-center">
-          <a className="button-main button-main-margin" href="industry.html">Full Projects</a>
+          <Link className="button-main button-main-margin" to="/industry">Full Projects</Link>
         </div>
       </section>
     )

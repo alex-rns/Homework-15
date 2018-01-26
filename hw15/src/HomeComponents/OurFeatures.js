@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link} from 'react-router-dom'
+
 
 const OurFeatures = () => {
   return (
@@ -50,7 +52,7 @@ const OurFeatures = () => {
 
         <div className="row boost-business align-items-center justify-content-between">
           <p>If you want to boost your business Contact us</p>
-          <a className="button-main" href="contact-us.html">Boost your business</a>
+          <Link className="button-main" to="/contact">Boost your business</Link>
         </div>
       </div>
 

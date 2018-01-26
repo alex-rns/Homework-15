@@ -52,25 +52,25 @@ const Footer = () => {
             <h5>Industary</h5>
             <ul>
               <li>
-                <a href="industry.html">Education</a>
+                <Link to ="/industry">Education</Link>
               </li>
               <li>
-                <a href="industry.html">business</a>
+                <Link to ="/industry">business</Link>
               </li>
               <li>
-                <a href="industry.html">realestate</a>
+                <Link to ="/industry">realestate</Link>
               </li>
               <li>
-                <a href="industry.html">technology</a>
+                <Link to ="/industry">technology</Link>
               </li>
               <li>
-                <a href="industry.html">banking</a>
+                <Link to ="/industry">banking</Link>
               </li>
               <li>
-                <a href="industry.html">communication</a>
+                <Link to ="/industry">communication</Link>
               </li>
               <li>
-                <a href="industry.html">much more</a>
+                <Link to ="/industry">much more</Link>
               </li>
             </ul>
           </div>

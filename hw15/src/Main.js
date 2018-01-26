@@ -7,6 +7,8 @@ import About from './About';
 import Industry from './Industry';
 import Contact from './Contact';
 import Blog from './Blog';
+import Testimonials from './Testimonials';
+import Careers from './Careers';
 
 class Main extends React.Component {
   render() {
@@ -18,8 +20,9 @@ class Main extends React.Component {
         <Route path="/contact" component={Contact} />
         <Route path="/blog" component={Blog} />
         {/*<Route path="/blog-post" component={BlogPost} />*/}
-        {/*<Route path="/testimonials" component={Testimonials} />*/}
+        <Route path="/testimonials" component={Testimonials} />
         {/*<Route path="/pricing" component={Pricing} />*/}
+        <Route path="/careers" component={Careers} />
         {/*<Route path="/404" component={PageNotFound} />*/}
       </div>
     );

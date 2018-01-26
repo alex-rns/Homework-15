@@ -14,6 +14,8 @@ class Home extends React.Component {
     document.title = "Consult Plus"
   }
   render() {
+
+
     return (
       <div className="Home">
           <MainBanner />

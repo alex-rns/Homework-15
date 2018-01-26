@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link} from 'react-router-dom'
 
 const MainServices = () => {
 
@@ -29,13 +30,13 @@ const MainServices = () => {
           {
             servicesList.map((item, index) => {
               return (
-                <a
+                <Link
                   key={index}
-                  href="industry.html"
+                  to="/industry"
                   className={'col-md-4 services-item icon-services ' + item.iconClassName}>
                   <h5>{item.title}</h5>
                   <p>{item.content}</p>
-                </a>
+                </Link>
               )
             })
           }
@@ -43,7 +44,7 @@ const MainServices = () => {
       </div>
 
       <div className="text-center">
-        <a className="button-main button-main-margin" href="industry.html">Full Services</a>
+        <Link className="button-main button-main-margin" to="/industry">Full Services</Link>
       </div>
     </section>
   )
