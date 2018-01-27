@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import BlogCard from './BlogCard'
 
-let cardContent = [
+const cardContent = [
   {
     title: "Blog Heading Here",
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.",
@@ -122,7 +122,6 @@ let cardContent = [
 
 
 class BlogContent extends React.Component {
-
 
   render() {
     return (
