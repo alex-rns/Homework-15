@@ -1,12 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-
 class BlogPostContent extends React.Component {
   render() {
     const data = this.props.dataPost;
-
-
 
     return (
       <section className="blog-post-section container">

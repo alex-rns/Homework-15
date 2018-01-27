@@ -4,7 +4,6 @@ class NewJobs extends React.Component {
   render() {
 
     const newJob = [
-
       {
         vacancy: "accountant manager",
         employment: "fool time",
@@ -28,7 +27,6 @@ class NewJobs extends React.Component {
         employment: "fuck time",
         location: "San francisco4"
       }
-
     ];
 
 

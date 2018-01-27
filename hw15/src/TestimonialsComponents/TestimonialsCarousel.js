@@ -1,14 +1,11 @@
 import React from 'react';
 
-
 class TestimonialsCarousel extends React.Component {
-
 
   render() {
     return(
       <section className="testimonials-page-carousel-section">
         <div className="container">
-
           <div className="testimonials-carousel col-lg-6 offset-lg-6">
 
             <div className="testimonials-carousel-item">

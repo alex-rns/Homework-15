@@ -15,7 +15,6 @@ const cardContent = [
       }
   },
 
-
   {
     title: "Blog Heading Here2",
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.",
@@ -126,9 +125,7 @@ class BlogContent extends React.Component {
   render() {
     return (
       <section className="blog-section container">
-
         <h3 className="text-left">blog page</h3>
-
         <div className="blog-gallery row">
 
           <BlogCard dataCardContent={cardContent}/>

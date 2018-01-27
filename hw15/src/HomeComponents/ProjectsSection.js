@@ -1,10 +1,10 @@
 import React from 'react';
 import $ from 'jquery';
 import 'slick-carousel';
-import { Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 class ProjectsSection extends React.Component {
-  componentDidMount(){
+  componentDidMount() {
     $('#projectCarousel').slick({
       autoplay: true,
       arrows: false,
@@ -14,7 +14,7 @@ class ProjectsSection extends React.Component {
   }
 
   render() {
-    return(
+    return (
       <section className="projects-section">
         <h3>Projects</h3>
         <div className="container projects-wrapper">

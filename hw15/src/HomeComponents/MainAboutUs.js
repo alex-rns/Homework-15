@@ -1,5 +1,6 @@
 import React from 'react';
 import $ from 'jquery';
+import { Link } from 'react-router-dom';
 import 'slick-carousel';
 
 class MainAboutUs extends React.Component{
@@ -79,7 +80,7 @@ class MainAboutUs extends React.Component{
           took a galley of
           type
           and scrambled.</p>
-        <a href="about-us.html" className="button-main button-main-margin">Read More</a>
+        <Link to="/about" className="button-main button-main-margin">Read More</Link>
 
         <div className="container about-carousel">
           <ul id="aboutCarousel">

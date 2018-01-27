@@ -3,7 +3,6 @@ import React from 'react';
 class PricingPlans extends React.Component {
   render() {
 
-
     const data = this.props.dataPrice;
 
     return (

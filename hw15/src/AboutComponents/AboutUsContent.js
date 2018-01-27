@@ -1,5 +1,4 @@
 import React from 'react';
-
 import AboutUsVideo from './AboutUsVideo'
 
 class AboutUsContent extends React.Component {

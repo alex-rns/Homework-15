@@ -19,7 +19,7 @@ class Faq extends React.Component {
   render() {
 
     let FaqContent;
-    let Plus = "plus";
+    let plus = "plus";
     if (this.state.isOpened) {
       FaqContent = (
         <div>
@@ -27,7 +27,7 @@ class Faq extends React.Component {
           </p>
         </div>
       );
-      Plus = "minus";
+      plus = "minus";
     }
 
     return (
@@ -42,13 +42,12 @@ class Faq extends React.Component {
           </span>
 
           <i
-            className={"fa fa-" + Plus} aria-hidden="true">
+            className={"fa fa-" + plus} aria-hidden="true">
           </i>
 
           {FaqContent}
 
         </div>
-
     );
   }
 }

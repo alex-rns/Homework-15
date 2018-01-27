@@ -24,7 +24,6 @@ class BlogCard extends React.Component {
         imgCover = " blog-card-img-cover";  dataDisplay = "d-none"
       }
 
-
       return (
         <article key={index} className="col-lg-4 col-sm-6 col-12 blog-item">
           <Link to="/blog-post">
