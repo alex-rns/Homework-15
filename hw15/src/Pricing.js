@@ -8,12 +8,32 @@ const pageTitle = "Pricing";
 
 const faq = [
   {
-    question: "Lorem 1 ?",
-    answer: "Lorem Ipsum ged 1."
+    question: "Lorem Ipsum is simply dummy text of the printing ?",
+    answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
   },
   {
-    question: "Lorem 2 ?",
-    answer: "Lorem Ipsum ged 2."
+    question: "Readable content of a page when looking at its layout ?",
+    answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+  },
+  {
+    question: "Suspendisse mattis leo non neque bibendum semper ?",
+    answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+  },
+  {
+    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ?",
+    answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+  },
+  {
+    question: "Mauris dictum purus ac dui efficitur, sed interdum ligula blandit ?",
+    answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+  },
+  {
+    question: "Phasellus eget erat aliquet, egestas odio eget, laoreet augue ?",
+    answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+  },
+  {
+    question: "Phasellus eget erat aliquet, egestas odio eget, laoreet augue ?",
+    answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
   }
 ];
 
@@ -42,7 +62,7 @@ class Pricing extends React.Component {
             {
               faq.map((item, index) => {
                 return(
-                  <Faq dataItem={item} dataIndex={index} />
+                  <Faq dataItem={item} key={index} />
                 )
               })
             }
