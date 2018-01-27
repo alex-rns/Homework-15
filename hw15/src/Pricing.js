@@ -6,6 +6,17 @@ import Faq from './PricingComponents/Faq';
 const pageTitle = "Pricing";
 
 
+const faq = [
+  {
+    question: "Lorem 1 ?",
+    answer: "Lorem Ipsum ged 1."
+  },
+  {
+    question: "Lorem 2 ?",
+    answer: "Lorem Ipsum ged 2."
+  }
+];
+
 
 const price = {
   basic: 100,
@@ -24,7 +35,25 @@ class Pricing extends React.Component {
       <div className="Pricing">
         <Banner dataTitle={pageTitle}/>
         <PricingPlans dataPrice={price} />
-        <Faq />
+
+        <section className="faq-section gray-bg">
+          <div className="container">
+            <h3 className="text-left">frequently asked questions</h3>
+            {
+              faq.map((item, index) => {
+                return(
+                  <Faq dataItem={item} dataIndex={index} />
+                )
+              })
+            }
+          </div>
+        </section>
+
+
+
+
+
+
       </div>
     );
   }
