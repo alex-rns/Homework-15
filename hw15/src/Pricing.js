@@ -5,6 +5,8 @@ import Faq from './PricingComponents/Faq';
 
 const pageTitle = "Pricing";
 
+
+
 const price = {
   basic: 100,
   silver: 150,
