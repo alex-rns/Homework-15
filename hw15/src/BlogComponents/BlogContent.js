@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import BlogCard from './BlogCard'
+import Masonry from 'react-masonry-component'
 
 const cardContent = [
   {
@@ -9,9 +10,9 @@ const cardContent = [
     date: "5-12-2016",
     tag:
       {
-        tagName : "Health",
-        tagLink : "/industry",
-        tagIcon : "fa-quote-left"
+        tagName: "Health",
+        tagLink: "/industry",
+        tagIcon: "fa-quote-left"
       }
   },
 
@@ -21,9 +22,9 @@ const cardContent = [
     date: "5-12-2016",
     tag:
       {
-        tagName : "Business",
-        tagLink : "/industry",
-        tagIcon : "fa-picture-o"
+        tagName: "Business",
+        tagLink: "/industry",
+        tagIcon: "fa-picture-o"
       },
     img: "images/blog-card-top.png"
   },
@@ -34,9 +35,9 @@ const cardContent = [
     date: "5-12-2016",
     tag:
       {
-        tagName : "Health",
-        tagLink : "/industry",
-        tagIcon : "fa-quote-left"
+        tagName: "Health",
+        tagLink: "/industry",
+        tagIcon: "fa-quote-left"
       }
   },
 
@@ -46,9 +47,9 @@ const cardContent = [
     date: "5-12-2016",
     tag:
       {
-        tagName : "Health",
-        tagLink : "/industry",
-        tagIcon : "fa-link"
+        tagName: "Health",
+        tagLink: "/industry",
+        tagIcon: "fa-link"
       },
     accentBg: true
   },
@@ -59,9 +60,9 @@ const cardContent = [
     date: "5-12-2016",
     tag:
       {
-        tagName : "Health",
-        tagLink : "/industry",
-        tagIcon : "fa-quote-left"
+        tagName: "Health",
+        tagLink: "/industry",
+        tagIcon: "fa-quote-left"
       },
     img: "images/blog-card-cover-img.png",
     imgCover: true
@@ -73,9 +74,9 @@ const cardContent = [
     date: "5-12-2016",
     tag:
       {
-        tagName : "Education",
-        tagLink : "/industry",
-        tagIcon : "fa-link"
+        tagName: "Education",
+        tagLink: "/industry",
+        tagIcon: "fa-link"
       }
   },
 
@@ -85,9 +86,9 @@ const cardContent = [
     date: "5-12-2016",
     tag:
       {
-        tagName : "Health",
-        tagLink : "/industry",
-        tagIcon : "fa-link"
+        tagName: "Health",
+        tagLink: "/industry",
+        tagIcon: "fa-link"
       },
     accentBg: true
   },
@@ -98,9 +99,9 @@ const cardContent = [
     date: "5-12-2016",
     tag:
       {
-        tagName : "Business",
-        tagLink : "/industry",
-        tagIcon : "fa-youtube-play"
+        tagName: "Business",
+        tagLink: "/industry",
+        tagIcon: "fa-youtube-play"
       },
     img: "images/img-youtube.png"
   },
@@ -111,9 +112,9 @@ const cardContent = [
     date: "5-12-2016",
     tag:
       {
-        tagName : "Technology",
-        tagLink : "/industry",
-        tagIcon : "fa-picture-o"
+        tagName: "Technology",
+        tagLink: "/industry",
+        tagIcon: "fa-picture-o"
       },
     img: "images/blog-card-top-2.png"
   }
@@ -123,14 +124,16 @@ const cardContent = [
 class BlogContent extends React.Component {
 
   render() {
+
+    let masonryOptions = {
+      transitionDuration: 0
+    };
+
     return (
       <section className="blog-section container">
         <h3 className="text-left">blog page</h3>
-        <div className="blog-gallery row">
 
           <BlogCard dataCardContent={cardContent}/>
-
-        </div>
 
         <nav aria-label="Page gallery navigation">
           <ul className="blog-pagination pagination justify-content-center">

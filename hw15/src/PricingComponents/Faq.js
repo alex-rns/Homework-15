@@ -23,8 +23,7 @@ class Faq extends React.Component {
     if (this.state.isOpened) {
       FaqContent = (
         <div>
-          <p  className="faq-answer">{this.props.dataItem.answer}
-          </p>
+          <p className="faq-answer">{this.props.dataItem.answer}</p>
         </div>
       );
       plus = "minus";

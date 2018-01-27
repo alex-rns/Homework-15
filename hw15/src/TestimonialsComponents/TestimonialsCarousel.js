@@ -1,6 +1,27 @@
 import React from 'react';
+import $ from "jquery";
 
 class TestimonialsCarousel extends React.Component {
+
+  componentDidMount(){
+    $('.testimonials-carousel').slick({
+      swipe: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      asNavFor: '.testimonials-thumb-nav'
+    });
+    $('.testimonials-thumb-nav').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      asNavFor: '.testimonials-carousel',
+      centerMode: true,
+      focusOnSelect: true,
+      variableWidth: true,
+      initialSlide: 1
+    });
+  }
+
 
   render() {
     return(
@@ -43,10 +64,10 @@ class TestimonialsCarousel extends React.Component {
           </div>
 
           <div className="testimonials-thumb-nav">
-            <img src="images/testimonials-client-4.png" alt="testimonials-client" />
-              <img src="images/testimonials-client-5.png" alt="testimonials-client" />
-                <img src="images/testimonials-client-6.png" alt="testimonials-client" />
-                  <img src="images/testimonials-client-7.png" alt="testimonials-client" />
+            <img className="w-75" src="images/testimonials-client-4.png" alt="testimonials-client" />
+              <img className="w-75" src="images/testimonials-client-5.png" alt="testimonials-client" />
+                <img className="w-75" src="images/testimonials-client-6.png" alt="testimonials-client" />
+                  <img className="w-75" src="images/testimonials-client-7.png" alt="testimonials-client" />
           </div>
         </div>
       </section>

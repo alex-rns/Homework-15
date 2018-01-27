@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import Masonry from 'react-masonry-component'
 
 class BlogCard extends React.Component {
   render() {
@@ -73,10 +74,9 @@ class BlogCard extends React.Component {
     });
 
     return (
-      <div>
+      <Masonry className="blog-gallery row">
         {Card}
-      </div>
-
+      </Masonry>
     )
   }
 }

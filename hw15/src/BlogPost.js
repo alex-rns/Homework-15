@@ -36,17 +36,17 @@ const relatedPost = [
   {
     img: "images/related-post-2.png",
     title: "Blog Heading Here",
-    date: "12-feb-2016"
+    date: "99-haha-2016"
   },
   {
     img: "images/related-post-3.png",
     title: "Blog Heading Here",
-    date: "13-feb-2016"
+    date: "29-jan-2018"
   },
   {
     img: "images/related-post-4.png",
     title: "Blog Heading Here",
-    date: "14-feb-2016"
+    date: "01-jan-2018"
   }
 ];
 
