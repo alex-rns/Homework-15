@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { NavLink as Link } from 'react-router-dom';
 import $ from 'jquery';
 
 class Header extends React.Component {
@@ -30,15 +31,15 @@ class Header extends React.Component {
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ml-auto text-uppercase">
-              <li className="nav-item active">
-                <Link to="/" className="nav-link">Home <span
+              <li className="nav-item">
+                <Link activeStyle={{ color: '#ef961a' }} to="/home" className="nav-link">Home <span
                   className="sr-only">(current)</span></Link>
               </li>
               <li className="nav-item">
-                <Link to="/about" className="nav-link">about us</Link>
+                <Link activeStyle={{ color: '#ef961a' }} to="/about" className="nav-link">about us</Link>
               </li>
               <li className="nav-item">
-                <Link to="/industry" className="nav-link">industry</Link>
+                <Link activeStyle={{ color: '#ef961a' }} to="/industry" className="nav-link">industry</Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link">services</a>
@@ -51,16 +52,16 @@ class Header extends React.Component {
                   pages
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <Link to="/blog" className="dropdown-item">Blog</Link>
-                  <Link to="/blog-post" className="dropdown-item">Blog post</Link>
-                  <Link to="/testimonials" className="dropdown-item">Testimonials</Link>
-                  <Link to="/pricing" className="dropdown-item">Pricing</Link>
-                  <Link to="/careers" className="dropdown-item">Careers</Link>
-                  <Link to="/404" className="dropdown-item">404</Link>
+                  <Link activeStyle={{ color: '#ef961a' }} to="/blog" className="dropdown-item">Blog</Link>
+                  <Link activeStyle={{ color: '#ef961a' }} to="/blog-post" className="dropdown-item">Blog post</Link>
+                  <Link activeStyle={{ color: '#ef961a' }} to="/testimonials" className="dropdown-item">Testimonials</Link>
+                  <Link activeStyle={{ color: '#ef961a' }} to="/pricing" className="dropdown-item">Pricing</Link>
+                  <Link activeStyle={{ color: '#ef961a' }} to="/careers" className="dropdown-item">Careers</Link>
+                  <Link activeStyle={{ color: '#ef961a' }} to="/404" className="dropdown-item">404</Link>
                 </div>
               </li>
               <li className="nav-item">
-                <Link to="/contact" className="nav-link">Contact us</Link>
+                <Link activeStyle={{ color: '#ef961a' }} to="/contact" className="nav-link">Contact us</Link>
               </li>
             </ul>
           </div>

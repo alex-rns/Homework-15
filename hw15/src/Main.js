@@ -9,12 +9,13 @@ import Contact from './Contact';
 import Blog from './Blog';
 import Testimonials from './Testimonials';
 import Careers from './Careers';
+import PageNotFound from './PageNotFound';
 
 class Main extends React.Component {
   render() {
     return (
       <div className="Main">
-        <Route exact path="/" component={Home} />
+        <Route exact path="/Home" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/industry" component={Industry} />
         <Route path="/contact" component={Contact} />
@@ -23,7 +24,7 @@ class Main extends React.Component {
         <Route path="/testimonials" component={Testimonials} />
         {/*<Route path="/pricing" component={Pricing} />*/}
         <Route path="/careers" component={Careers} />
-        {/*<Route path="/404" component={PageNotFound} />*/}
+        <Route path="/404" component={PageNotFound} />
       </div>
     );
   }
