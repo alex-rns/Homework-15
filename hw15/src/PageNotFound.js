@@ -22,7 +22,7 @@ class PageNotFound extends React.Component {
               <div className="col-md-6 error-help">
                 <h3>oops !!</h3>
                 <p>The page you are looking for cannot be found</p>
-                <Link className="button-main button-main-margin" to="./Home">Back to home page</Link>
+                <Link className="button-main button-main-margin" to="./">Back to home page</Link>
               </div>
             </div>
           </div>

@@ -6,8 +6,8 @@ $(function() {
   //   itemSelector: '.blog-item'
   // });
 
-  $('a[href="#"], button').on('click', function (event) {
-    event.preventDefault();
-  })
+  // $('a[href="#"], button').on('click', function (event) {
+  //   event.preventDefault();
+  // })
 
 });

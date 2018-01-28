@@ -41,7 +41,7 @@ class Header extends React.Component {
                 <Link activeStyle={{ color: '#ef961a' }} to="/industry" className="nav-link">industry</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link">services</a>
+                <Link className="nav-link" to="/404" >services</Link>
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="" id="navbarDropdown"
