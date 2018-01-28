@@ -1,7 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import BlogCard from './BlogCard'
-import Masonry from 'react-masonry-component'
 
 const cardContent = [
   {
@@ -124,10 +123,6 @@ const cardContent = [
 class BlogContent extends React.Component {
 
   render() {
-
-    let masonryOptions = {
-      transitionDuration: 0
-    };
 
     return (
       <section className="blog-section container">
